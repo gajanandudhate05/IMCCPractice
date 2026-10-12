@@ -76,6 +76,20 @@ class LinkedList:
             curr = next_node
 
         self.head = prev
+        def concatenate(self, second_list):
+        # If the first list is empty
+            if self.head is None:
+                self.head = second_list.head
+            return
+
+        temp = self.head
+
+        # Find the last node of the first list
+        while temp.next is not None:
+            temp = temp.next
+
+        # Connect it to the second list
+        temp.next = second_list.head
 
     # Delete the middle node
     # For an even-length list, delete the second middle node
