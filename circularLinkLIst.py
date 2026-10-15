@@ -5,8 +5,6 @@ class Node:
         self.data = val
         self.next = None
         self.prev = None       # New link to previous node
-
-
 class LinkedList:
     def __init__(self):
         self.head = None
@@ -17,10 +15,8 @@ class LinkedList:
             self.head = new_node
         else:
             temp = self.head
-
             while temp.next is not None:
                 temp = temp.next
-
             temp.next = new_node
             new_node.prev = temp
 
@@ -29,12 +25,7 @@ class LinkedList:
         if pos < 1:
             print("Invalid position")
             return
-            #temp.next=
-
-
-
-
-        # Insert at the beginning
+            # Insert at the beginning
         if pos == 1:
             new_node.next = self.head
 
