@@ -65,7 +65,41 @@ class DoublyLinkedList:
             temp = temp.next
 
         print("None")
+    def count_occ(self,num):
+        count=0
+        temp=self.head
+        while temp is not None:
+            if temp.data==num:
+                count+=1
+            temp=temp.next
+        return count
+    #write a function swap first and last node
+    def swap_first_last(self):
+        if self.head is None or self.head.next is None:
+            return
 
+        first = self.head
+        last = self.head
+
+        while last.next is not None:
+            last = last.next
+
+        # Swap the data of first and last nodes
+
+    def swap(self):
+        temp=self.head
+        while temp.next
+    is not None:
+                temp=temp.next  
+                node1.next=node1.next
+                temp.prev=node1
+                node1.prev=
+                node1.next=None
+                swlf.head=temp
+
+                temp.prev=None
+    
+        first.data, last.data = last.data, first.data
 
 linked_list = DoublyLinkedList()
 
@@ -82,3 +116,4 @@ linked_list.del_node(value)
 
 print("After deletion:")
 linked_list.display()
+print("Occurrences of 20:", linked_list.count_occ(20))

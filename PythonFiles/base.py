@@ -1,4 +1,4 @@
-#odd number
-def countOddNumbers(n, array):
-    # Count numbers that are not divisible by 2
-    return sum(1 for num in array if num % 2 != 0)
+f = open(r"C:\Users\Gajanan\ImccPractice\PythonFiles\sample.txt", "r")
+line = f.readline()
+print(line, end="")
+f.close()
