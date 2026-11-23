@@ -26,11 +26,15 @@
 # print(" a student is ",)
 
 
-def detail(*args,**info):
+# def detail(*args,**info):
 
-    print(info["company"])
-    total=0
-    for i in args:
-        total=total+i
-    print(total)
-detail(100,24000,25000,name="sujal",company="amazon")
+#     print(info["company"])
+#     total=0
+#     for i in args:
+#         total=total+i
+#     print(total)
+# detail(100,24000,25000,name="sujal",company="amazon")
+for i in range(4):
+    for j in range(4):
+        print("*", end=" ")
+    print()
