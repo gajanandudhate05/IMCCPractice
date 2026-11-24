@@ -6,3 +6,7 @@ for ch in content:
         count += 1
 print("Number of vowels:", count)
 f.close()
+
+
+
+def greet(fx)
