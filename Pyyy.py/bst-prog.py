@@ -32,6 +32,15 @@ class BST:
                         return
                     else:
                         temp = temp.right
+    def del_node(self,rt,val):
+        else:
+            if rt.left is None:
+                return rt.right
+            if rt.left is None:
+                return rt.left
+            succ=self.succ
+            
+            
 
     # Inorder traversal (Left, Root, Right)
     def inorder(self, rt):
@@ -40,7 +49,7 @@ class BST:
         else:
             self.inorder(rt.left)
             print(rt.data, end=" ")
-            
+    
 # find minimum  value of node and maximum value of node
     def find_minmax(self,rt):
         temp=rt
