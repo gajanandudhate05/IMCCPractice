@@ -183,3 +183,6 @@ print("Inorder after deletion:")
 b1.inorder(b1.root)
 
 print("\nTotal nodes after deletion:", b1.count(b1.root))
+
+
+
